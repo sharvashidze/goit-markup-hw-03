@@ -1,0 +1,215 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  background-color: var(--цвет-фона);
+}
+:root {
+  --основной-цвет: #757575;
+  --цвет-фокуса: #2196f3;
+  --цвет-текста: #212121;
+  --цвет-фона: #ffffff;
+  --цвет-секции: #f5f4fa;
+  --цвет-футер-фон: #2f303a;
+  --цвет-кнопки-ховер: #188ce8;
+}
+a {
+  text-decoration: none;
+}
+h2,
+h3 {
+  color: var(--цвет-текста);
+}
+/*--✌️Шапка Страницы🤞--*/
+.main-header {
+  border: 1px solid #ececec;
+}
+/*-------✌️LOGO🤞------*/
+.logo {
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--цвет-текста);
+}
+.logo > span {
+  color: var(--цвет-фокуса);
+}
+/*-----✌️нав список🤞---*/
+
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--цвет-текста);
+}
+.nav-link > span {
+  color: var(--цвет-фокуса);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--цвет-фокуса);
+}
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--основной-цвет);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--цвет-фокуса);
+}
+/*----✌️Герой Страницы🤞-----*/
+.section-hero {
+  max-width: 1600px;
+  background-color: var(--цвет-футер-фон);
+}
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--цвет-фона);
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}
+.main-btn {
+  background-color: var(--цвет-фокуса);
+  color: var(--цвет-фона);
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: var(--цвет-кнопки-ховер);
+}
+/*--✌️Характеристики Страницы🤞---*/
+.Specifications-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.Specifications-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*---✌️Страница Занятье🤞---*/
+.occupation-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*-----✌️Страница КОМАНДЫ🤞---*/
+.our-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/*---✌️Нижняя часть страницы🤞---*/
+/*--✌️Нижняя часть LOGO🤞---*/
+.logo2 {
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--цвет-фокуса);
+}
+.logo2 > span {
+  color: var(--цвет-фона);
+}
+.footer-page {
+  max-width: 1600px;
+  background-color: var(--цвет-футер-фон);
+}
+.footer-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--основной-цвет);
+}
+.footer-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--цвет-фона);
+}
+/*----✌️Страница PORTFOLIO🤞----*/
+/*------✌️Кнопки Страницы🤞----*/
+.buttons {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--цвет-текста);
+  background-color: var(--цвет-секции);
+  cursor: pointer;
+  padding: 6px 22px;
+  border-style: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.buttons:hover,
+.buttons:focus {
+  color: var(--цвет-фона);
+  background-color: var(--цвет-фокуса);
+}
+
+/*--✌️ПЕРЕЧЕНЬ продукта Страницы🤞--*/
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.product-link {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
