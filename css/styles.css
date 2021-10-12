@@ -15,9 +15,30 @@ body {
 a {
   text-decoration: none;
 }
+
 h2,
 h3 {
   color: var(--цвет-текста);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.conteiner {
+  width: 1200px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*--✌️Шапка Страницы🤞--*/
 .main-header {
@@ -37,7 +58,12 @@ h3 {
   color: var(--цвет-фокуса);
 }
 /*-----✌️нав список🤞---*/
-
+.main-nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
 .nav-link {
   font-style: normal;
   font-weight: 500;
