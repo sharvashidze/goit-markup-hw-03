@@ -35,8 +35,8 @@ ul {
 }
 .conteiner {
   width: 1200px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -53,6 +53,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--цвет-текста);
+  margin-right: 93px;
 }
 .logo > span {
   color: var(--цвет-фокуса);
@@ -60,11 +61,18 @@ ul {
 /*-----✌️нав список🤞---*/
 .main-nav {
   display: flex;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-list {
   display: flex;
+  align-items: center;
 }
 .nav-link {
+  display: inline-block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -72,6 +80,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--цвет-текста);
 }
+
 .nav-link > span {
   color: var(--цвет-фокуса);
 }
@@ -79,6 +88,10 @@ ul {
 .nav-link:focus {
   color: var(--цвет-фокуса);
 }
+.nav-list-contacts {
+  display: flex;
+}
+
 .contacts {
   font-style: normal;
   font-weight: 500;
