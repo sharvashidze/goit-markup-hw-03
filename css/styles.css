@@ -118,6 +118,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--цвет-фона);
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .button {
   font-weight: 700;
@@ -131,6 +133,7 @@ ul {
   border-radius: 4px;
   border-style: none;
 }
+
 .main-btn {
   background-color: var(--цвет-фокуса);
   color: var(--цвет-фона);
@@ -141,6 +144,11 @@ ul {
   background-color: var(--цвет-кнопки-ховер);
 }
 /*--✌️Характеристики Страницы🤞---*/
+.Specifications {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  outline: 1px solid brown;
+}
 .Specifications-title {
   font-weight: 700;
   font-size: 14px;
@@ -154,6 +162,11 @@ ul {
   letter-spacing: 0.03em;
 }
 /*---✌️Страница Занятье🤞---*/
+.occupation {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid tomato;
+}
 .occupation-title {
   font-weight: 700;
   font-size: 36px;
@@ -162,6 +175,12 @@ ul {
   letter-spacing: 0.03em;
 }
 /*-----✌️Страница КОМАНДЫ🤞---*/
+.team {
+  background-color: var(--цвет-секции);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid tomato;
+}
 .our-team {
   font-weight: 700;
   font-size: 36px;
