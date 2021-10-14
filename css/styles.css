@@ -32,6 +32,7 @@ ul {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 .conteiner {
   width: 1200px;
@@ -43,6 +44,11 @@ ul {
 /*--✌️Шапка Страницы🤞--*/
 .main-header {
   border: 1px solid #ececec;
+}
+.page-header {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  display: flex;
 }
 /*-------✌️LOGO🤞------*/
 .logo {
@@ -59,15 +65,13 @@ ul {
   color: var(--цвет-фокуса);
 }
 /*-----✌️нав список🤞---*/
-.main-nav {
-  display: flex;
-  padding-bottom: 32px;
-  padding-top: 32px;
+.nav-item {
+  display: inline-block;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-list {
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -90,8 +94,12 @@ ul {
 }
 .nav-list-contacts {
   display: flex;
+  margin-left: auto;
+  align-items: center;
 }
-
+.nav-contacts:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts {
   font-style: normal;
   font-weight: 500;
@@ -109,6 +117,11 @@ ul {
   max-width: 1600px;
   background-color: var(--цвет-футер-фон);
 }
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
 .title {
   font-style: normal;
   font-weight: 900;
@@ -118,10 +131,11 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--цвет-фона);
-  padding-top: 200px;
   margin-bottom: 30px;
 }
+
 .button {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -144,10 +158,19 @@ ul {
   background-color: var(--цвет-кнопки-ховер);
 }
 /*--✌️Характеристики Страницы🤞---*/
+.is-hidden {
+  text-align: center;
+  margin-bottom: 30px;
+}
 .Specifications {
   padding-bottom: 94px;
   padding-top: 94px;
-  outline: 1px solid brown;
+}
+.Specifications-list {
+  display: flex;
+}
+.Specifications-item:not(:last-child) {
+  margin-right: 30px;
 }
 .Specifications-title {
   font-weight: 700;
@@ -155,6 +178,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .Specifications-text {
   font-size: 14px;
@@ -165,7 +189,6 @@ ul {
 .occupation {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid tomato;
 }
 .occupation-title {
   font-weight: 700;
@@ -173,13 +196,19 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.occupation-list {
+  display: flex;
+}
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*-----✌️Страница КОМАНДЫ🤞---*/
 .team {
   background-color: var(--цвет-секции);
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid tomato;
 }
 .our-team {
   font-weight: 700;
@@ -187,17 +216,40 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--цвет-фона);
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-person {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /*---✌️Нижняя часть страницы🤞---*/
 /*--✌️Нижняя часть LOGO🤞---*/
@@ -212,6 +264,10 @@ ul {
 }
 .logo2 > span {
   color: var(--цвет-фона);
+}
+.logo2 {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .footer-page {
   max-width: 1600px;
@@ -228,14 +284,27 @@ ul {
 .footer-contacts:focus {
   color: var(--основной-цвет);
 }
+
 .footer-text {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--цвет-фона);
+  margin-bottom: 9px;
+}
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 /*----✌️Страница PORTFOLIO🤞----*/
+.buttons-products {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 /*------✌️Кнопки Страницы🤞----*/
 .buttons {
   display: inline-block;
@@ -258,7 +327,14 @@ ul {
   color: var(--цвет-фона);
   background-color: var(--цвет-фокуса);
 }
-
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
 /*--✌️ПЕРЕЧЕНЬ продукта Страницы🤞--*/
 .product-name {
   font-weight: bold;
@@ -270,4 +346,18 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+.product-item {
+  background: var(--цвет-фона);
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  flex-basis: calc((100% / 3-30px));
 }
