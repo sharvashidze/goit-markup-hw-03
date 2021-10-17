@@ -43,13 +43,9 @@ ul {
 }
 /*--✌️Шапка Страницы🤞--*/
 .main-header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
-.page-header {
-  padding-bottom: 32px;
-  padding-top: 32px;
-  display: flex;
-}
+
 /*-------✌️LOGO🤞------*/
 .logo {
   font-style: normal;
@@ -65,6 +61,9 @@ ul {
   color: var(--цвет-фокуса);
 }
 /*-----✌️нав список🤞---*/
+.nav-list {
+  display: flex;
+}
 .nav-item {
   display: inline-block;
 }
@@ -72,10 +71,11 @@ ul {
   margin-right: 50px;
 }
 .main-nav {
-  display: flex;
   align-items: center;
 }
 .nav-link {
+  padding-bottom: 32px;
+  padding-top: 32px;
   display: inline-block;
   font-style: normal;
   font-weight: 500;
@@ -93,13 +93,10 @@ ul {
   color: var(--цвет-фокуса);
 }
 .nav-list-contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
 }
-.nav-contacts:not(:last-child) {
-  margin-right: 50px;
+.nav-contacts {
 }
+
 .contacts {
   font-style: normal;
   font-weight: 500;
@@ -114,15 +111,16 @@ ul {
 }
 /*----✌️Герой Страницы🤞-----*/
 .section-hero {
-  max-width: 1600px;
-  background-color: var(--цвет-футер-фон);
-}
-.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  width: 1600px;
+
+  background-color: var(--цвет-футер-фон);
 }
+
 .title {
+  max-width: 690px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -277,7 +275,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-page {
-  max-width: 1600px;
+  width: 1600px;
   background-color: var(--цвет-футер-фон);
 }
 .footer-contacts {
